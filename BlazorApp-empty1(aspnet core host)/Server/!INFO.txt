@@ -1,0 +1,5 @@
+* tested decompiling the shared dll, as per:
+"Hack A Blazor WASM App (At Your Own Risk)"
+https://www.youtube.com/watch?v=Xx1eMlscXrQ
+
+did this off of the dll that was downloaded running from kestrel, via localhost
