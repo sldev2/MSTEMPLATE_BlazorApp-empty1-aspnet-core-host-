@@ -1,0 +1,1 @@
+C:\vs2022\MSTEMPLATES\BlazorApp-empty1(aspnet core host)
