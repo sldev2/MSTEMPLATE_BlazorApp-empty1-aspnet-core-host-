@@ -1,1 +1,11 @@
 C:\vs2022\MSTEMPLATES\BlazorApp-empty1(aspnet core host)
+
+origin  https://github.com/sldev2/MSTEMPLATE_BlazorApp-empty1-aspnet-core-host-.git (fetch)
+origin  https://github.com/sldev2/MSTEMPLATE_BlazorApp-empty1-aspnet-core-host-.git (push)
+
+==========================================================
+BRANCH   publish_liquid_web
+==========================================================
+try publishing to myfocusrewards.com
+	* expect project to freeze when loading (prolly CORS issues)
+	* try to fix CORS issues
