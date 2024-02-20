@@ -9,10 +9,9 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("BlazorPolicy", builder =>
     {
-        builder.WithOrigins("https://promandex.com") // Replace with your Blazor WASM client's domain
+        builder.WithOrigins("https://promandex.com")
                .AllowAnyHeader()
-               .AllowAnyMethod()
-               .AllowCredentials();
+               .AllowAnyMethod();
     });
 });
 
@@ -34,6 +33,14 @@ app.UseBlazorFrameworkFiles();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+// TOLEARN  when not commented out, got the Administrator liquidweb portal login!
+// whether or not .AllowCredentials() was set
+//app.Use(async (context, next) =>
+//{
+//    context.Response.Headers.Add("Referrer-Policy", "origin-when-cross-origin");
+//    await next.Invoke();
+//});
 
 app.UseCors("BlazorPolicy"); // Moved after UseRouting
 
